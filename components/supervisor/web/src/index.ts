@@ -27,4 +27,9 @@ window.addEventListener('DOMContentLoaded', () => {
     loadingScreen.src = startURL;
     loadingScreen.className = 'gitpod-loading-screen';
     document.body.appendChild(loadingScreen);
+
+    const ideScreen = document.createElement('iframe');
+    ideScreen.id = 'ide-screen';
+    ideScreen.src = './ide';
+    document.body.appendChild(ideScreen);
 });
